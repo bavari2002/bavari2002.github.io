@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <p>First Name</p>
+
+    <input type="number" id="fname" name="fname" /><br />
+
+    <p>Last Name</p>
+
+    <input type="number" id="lname" name="lname" /><br />
+
+    <button type="button" onclick='ubahteks()'>Click Me!</button>
+
+    <script>
+        function ubahteks() {
+            var firstname = document.getElementById("fname").value;
+            var lastname = document.getElementById("lname").value;
+            let m = "abc";
+            const o = 12345;
+            if (parseFloat(firstname) < 10) {
+                document.getElementById("demo").innerHTML = "Nilai firstname kurang dari 10";
+            }
+            else if (parseFloat(lastname) < 10) {
+                document.getElementById("demo").innerHTML = "Nilai lastname kurang dari 10";
+            }
+            else if (m=="abc") { 
+                document.getElementById("demo").innerHTML = parseFloat(firstname) + parseFloat(lastname);
+            }
+        }
+    </script>
+</body>
+</html>
